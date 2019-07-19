@@ -32,7 +32,7 @@ class Stocks(Base):
     Volume = Column(Integer)
  
 # class Tweets(Base):
-#     __tablename__ = "all_crashes"
+#     __tablename__ = "all_tweets"
 #     id = Column(Integer, primary_key = True)
 #     date = Column(String(10))
 #     manufacturer = Column(String(255))
@@ -79,9 +79,9 @@ def stock_data():
 
 #     session = Session(engine)
     
-#     results = session.query(AllCrashes.date, AllCrashes.manufacturer, AllCrashes.carrier, AllCrashes.fatalities, AllCrashes.location).all()
+#     results = session.query(Tweets.date, Tweets.handle, Tweets.handle, Tweets.keyword, Tweets.location).all()
     
-#     airline_carriers = []
+#     all_tweets = []
 #     for date, manufacturer, carrier, fatalities, location in results:
 #         airline_dict = {}
 #         airline_dict['date'] = date
@@ -91,7 +91,7 @@ def stock_data():
 #         airline_dict['location'] = location
 #         airline_carriers.append(airline_dict)
         
-#     return jsonify(airline_carriers)
+#     return jsonify(all_tweets)
 
 @app.route('/twitter_influencers')
 def twitter_impact():
