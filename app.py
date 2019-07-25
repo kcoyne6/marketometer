@@ -73,9 +73,9 @@ def stocks_page():
 def analysis():
     return render_template('Analysis.html')
 
-@app.route('/data')
-def data_resources():
-    return render_template('data.html')
+# @app.route('/data')
+# def data_resources():
+#     return render_template('data.html')
 
 @app.route('/')
 def home():
