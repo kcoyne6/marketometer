@@ -9,7 +9,16 @@ h1{
     margin: 46px !important;
 }
 
+#stockInput {
+  /* position: absolute; */
+  top: 355px;
+  left: 575px;
+}
 
+#stockInput {
+  height: 30px;
+  width: 300px;
+}
 
 
 
